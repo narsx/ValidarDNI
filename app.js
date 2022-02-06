@@ -7,7 +7,6 @@ app.get('/checkDni', function (req, res) {
     let letra = "";
     let respuesta = "";
     let numeroLetra = dni.split('-');
-
     resto = numeroLetra[0] % 23;
 
     switch (resto) {
